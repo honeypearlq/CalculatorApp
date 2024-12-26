@@ -1,0 +1,93 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #F2F9FF; /* Pastel blue */
+    color: #333;
+}
+
+/* Header Styles */
+#header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#title {
+    font-size: 2.5rem;
+    color: #E195AB; /* Pastel pink */
+    margin-bottom: 10px;
+}
+
+/* Visually Hidden (for screen readers) */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Calculator Styles */
+.calculator {
+    background-color: #FFF5D7; /* Light yellow */
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+.display {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #333;
+    background-color: #FFCCE1; /* Light pink */
+    text-align: right;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    background-color: #E195AB; /* Pastel pink */
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.operator {
+    background-color: #FFCCE1; /* Light pink */
+}
